@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="effect.css" />
+    <title>MyPortfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              link: "#6d28d9",
+              back: "#010718",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-back">
+    <div>
+      <div class="bg-back sticky top-0 w-[100%]">
+        <nav class="w-[100%] flex justify-between p-5 z-40">
+          <h3 class="text-3xl text-white">My portfolio</h3>
+          <ul class="flex items-center bg-back">
+            <li class="pl-8">
+              <a
+                class="text-link delay-100 ease-in-out hover:border-b border-link transition-all"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="pl-8">
+              <a class="text-link hover:border-b border-link" href="#about"
+                >About me</a
+              >
+            </li>
+            <li class="pl-8">
+              <a class="text-link hover:border-b border-link" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="pl-8">
+              <a class="text-link hover:border-b border-link" href="#skills"
+                >skills</a
+              >
+            </li>
+            <li class="px-8">
+              <a class="text-link hover:border-b border-link" href="#projects"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mt-20 h-[90vh] flex items-center justify-center" id="home">
+        <div class="w-[95%] h-[80vh] flex flex-col justify-center space-y-10">
+          <div class="pl-20">
+            <h1 class="text-white text-2xl">I am</h1>
+            <h1 class="text-cyan-400 text-5xl font-bold">M.Girish Rao</h1>
+          </div>
+          <div class="container pl-20">
+            <span class="text first-text">I'm a</span>
+            <span class="text sec-text"></span>
+          </div>
+        </div>
+      </div>
+      <div class="pt-20" id="about">
+        <h1 class="text-white text-2xl font-bold pl-20">About Me</h1>
+        <pre class="text-white pt-5">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum."
+        </pre>
+        <div class="pl-20">
+          <div class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+              />
+            </svg>
+            <p class="pl-3 text-white">#contact No..</p>
+          </div>
+          <div class="mt-3 flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <g data-name="Github 1">
+                <g data-name="<Group>">
+                  <path
+                    fill="none"
+                    stroke="#303c42"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 .5A11.5 11.5 0 0 0 .5 12a11.82 11.82 0 0 0 9 11.5v-3h-1c-2.62 0-3.54-4-5-4 2.79 0 3.33 2 5 2a.89.89 0 0 0 1-1v-.35c-2.91-.82-5-3-5-5.65a5.26 5.26 0 0 1 1.57-3.66A3.16 3.16 0 0 1 6.5 4.5 5.26 5.26 0 0 1 8.88 6a9.14 9.14 0 0 1 6.24 0 5.26 5.26 0 0 1 2.38-1.5 3.16 3.16 0 0 1 .43 3.34 5.26 5.26 0 0 1 1.57 3.66c0 2.74-2.29 5-5.42 5.76a4.68 4.68 0 0 1 .42 2.24v4a11.82 11.82 0 0 0 9-11.5A11.5 11.5 0 0 0 12 .5Z"
+                    data-name="<Path>"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <a href="https://github.com/Girish209" class="text-link pl-3">Girish Rao</a>
+          </div>
+          <div class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+            <p class="text-white pl-3">raogirish257@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-20" id="services">
+        <h1 class="text-white text-3xl text-center font-extrabold">Services</h1>
+        <div class="flex justify-around mt-10">
+          <div class="bg-black rounded-md p-10">
+            <h1 class="text-white text-xl text-center font-bold">Coding</h1>
+            <p class="text-white text-md pt-2">
+              
+                I can code in different Languages<br/>
+                Like C, Java, JavaScript and have a <br/>
+                great knowledge of DSA
+              
+            </p>
+          </div>
+          <div class="bg-black rounded-md p-10">
+            <h1 class="text-white text-xl font-bold text-center">Problem Solving</h1>
+            <p class="text-white text-md pt-2">
+              
+                I can code in different Languages<br/>
+                Like C, Java, JavaScript and have a <br/>
+                great knowledge of DSA
+              
+            </p>
+          </div>
+          <div class="bg-black rounded-md p-10">
+            <h1 class="text-white text-xl font-bold text-center">Designing</h1>
+            <p class="text-white text-md pt-2">
+              
+                I can code in different Languages<br/>
+                Like C, Java, JavaScript and have a <br/>
+                great knowledge of DSA
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="h-[60vh] pt-[140px]" id="skills">
+        <div class="w-[100%] flex justify-between">
+          <div class="w-[50%] flex flex-col pl-10">
+            <h1 class="text-white text-3xl pb-3">Skills</h1>
+            <p class="text-white text-md">
+              I have a good knowledge of HTML, CSS and JavaScript. Also, I am familiar with C
+              programming language as well.<br />I also know how to use Git for version control in my
+              projects.
+              As a soft skills I am a quick learner having a good leadership quality
+              and team player.
+
+            </p>
+          </div>
+          <div class="pr-10 pt-10">
+            <div class="w-[50%] flex flex-col items-center justify-center pb-5">
+              <!-- Skill -->
+              <p><strong class="text-white">HTML/CSS:</strong></p>
+              <div class="flex items-center justify-between">
+                <div class="h-2 w-60 border border-white rounded-full">
+                  <div
+                    class="w-[90%] h-full bg-cyan-400 transform rounded-l-full"
+                    id="slider"
+                  ></div>
+                </div>
+                <h3 class="text-white pl-3">90%</h3>
+              </div>
+            </div>
+            <div class="w-[50%] flex flex-col items-center justify-center pb-5">
+              <!-- Skill -->
+              <p><strong class="text-white">C/Java</strong></p>
+              <div class="flex items-center justify-between">
+                <div class="h-2 w-60 border border-white rounded-full">
+                  <div
+                    class="w-[80%] h-full bg-cyan-400 transform rounded-l-full"
+                    id="slider"
+                  ></div>
+                </div>
+                <h3 class="text-white pl-3">80%</h3>
+              </div>
+            </div>
+            <div class="w-[50%] flex flex-col items-center justify-center pb-5">
+              <!-- Skill -->
+              <p><strong class="text-white">Javascript</strong></p>
+              <div class="flex items-center justify-between">
+                <div class="h-2 w-60 border border-white rounded-full">
+                  <div
+                    class="w-[65%] h-full bg-cyan-400 transform rounded-l-full"
+                    id="slider"
+                  ></div>
+                </div>
+                <h3 class="text-white pl-3">65%</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[100%] flex justify-between" id="projects">
+        <!--Projects-->
+        <div class="w-[40%] mx-10 rounded-lg bg-teal-800">
+          <img
+            class="mt-5 w-[95%] ml-3"
+            src="Screenshot 2023-07-24 061708.png"
+          />
+          <p class="text-white pl-4">Website using react</p>
+        </div>
+        <div class="w-[40%] mx-10 rounded-lg bg-red-950">
+          <img
+            class="mt-5 w-[95%] ml-3"
+            src="Screenshot 2023-07-24 061835.png"
+          />
+          <p class="text-white pl-4">Todo list using MERN</p>
+        </div>
+        <div class="w-[40%] mx-10 rounded-lg bg-red-950">
+          <img
+            class="mt-5 w-[95%] ml-3"
+            src="Screenshot 2023-07-30 164848.png"
+          />
+          <p class="text-white pl-4">Vegetable Shopping App</p>
+        </div>
+      </div>
+      <div class="m-20"></div>
+    </div>
+  </body>
+  <script>
+    const text = document.querySelector(".sec-text");
+    const textLoad = () => {
+      setTimeout(() => {
+        text.textContent = "Coder";
+      }, 0);
+      setTimeout(() => {
+        text.textContent = "Developer";
+      }, 4000);
+      setTimeout(() => {
+        text.textContent = "YouTuber";
+      }, 8000); //1s = 1000 milliseconds
+    };
+    textLoad();
+    setInterval(textLoad, 12000);
+  </script>
+</html>
